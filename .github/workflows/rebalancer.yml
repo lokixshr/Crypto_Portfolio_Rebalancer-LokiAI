@@ -3,10 +3,10 @@ name: LokiAI Rebalancer
 on:
   schedule:
     - cron: "*/5 * * * *"   # runs every 5 minutes
-  workflow_dispatch:
+  workflow_dispatch:        # allow manual trigger
 
 jobs:
-  run:
+  rebalance:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,8 +19,7 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: |
-          pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir -r requirements.txt
 
       - name: Run executor
         env:
@@ -36,5 +35,4 @@ jobs:
           ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
           ALCHEMY_POLYGON_API_KEY: ${{ secrets.ALCHEMY_POLYGON_API_KEY }}
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
-        run: |
-          python -m agents.portfolio_rebalancer.executor
+        run: python -m agents.portfolio_rebalancer.executor
