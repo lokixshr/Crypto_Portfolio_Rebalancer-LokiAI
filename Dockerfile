@@ -1,17 +1,18 @@
+# Use slim Python base
 FROM python:3.10-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy dependency list and install
-COPY requirements.txt requirements.txt
+# Install dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy all source code into container
+# Copy project files
 COPY . .
 
-# Copy environment file so container knows your Mongo URI
+# Copy .env into container (important for Render/GCP)
 COPY .env .env
 
-# Run the rebalancer by default
+# Default command
 CMD ["python", "-m", "agents.portfolio_rebalancer.executor"]
