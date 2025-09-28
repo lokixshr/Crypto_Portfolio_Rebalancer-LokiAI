@@ -12,7 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Copy .env into container (important for Render/GCP)
-COPY .env .env
-
-# Default command
+COPY . .
 CMD ["python", "-m", "agents.portfolio_rebalancer.executor"]
+
