@@ -1,0 +1,14 @@
+2025-09-27 15:18:21,038 INFO portfolio_rebalancer - Starting fallback sleep loop; interval=5m dry_run=True (install APScheduler for better reliability)
+2025-09-27 15:18:21,133 INFO portfolio_rebalancer - Simulation summary: {'total_buy_cost_usd': 0.0, 'total_sell_proceeds_usd': 0.0, 'net_usd_effect': 0.0, 'est_total_gas_usd': 0.0}
+2025-09-27 15:18:28,861 INFO portfolio_rebalancer - Skipping execution because simulation is not viable.
+2025-09-27 15:23:21,868 INFO portfolio_rebalancer - Simulation summary: {'total_buy_cost_usd': 0.0, 'total_sell_proceeds_usd': 0.0, 'net_usd_effect': 0.0, 'est_total_gas_usd': 0.0}
+2025-09-27 15:23:28,321 INFO portfolio_rebalancer - Skipping execution because simulation is not viable.
+2025-09-27 15:28:22,359 INFO portfolio_rebalancer - Simulation summary: {'total_buy_cost_usd': 0.0, 'total_sell_proceeds_usd': 0.0, 'net_usd_effect': 0.0, 'est_total_gas_usd': 0.0}
+2025-09-27 15:28:29,469 INFO portfolio_rebalancer - Skipping execution because simulation is not viable.
+2025-09-27 15:33:22,476 INFO portfolio_rebalancer - Simulation summary: {'total_buy_cost_usd': 0.0, 'total_sell_proceeds_usd': 0.0, 'net_usd_effect': 0.0, 'est_total_gas_usd': 0.0}
+2025-09-27 15:33:31,704 INFO portfolio_rebalancer - Skipping execution because simulation is not viable.
+2025-09-27 15:35:11,292 INFO portfolio_rebalancer - Scheduler stopped by user.
+2025-09-27 18:42:05,692 INFO portfolio_rebalancer - Connecting to MongoDB at your-atlas-connection-uri...
+2025-09-27 18:51:44,638 INFO portfolio_rebalancer - Connecting to MongoDB at mongodb+srv://lokiuser:$hrishii!okii25@loki-ai-cluster.b63sh3c.mongodb.net/?retryWrites=true&w=majority&appName=loki-ai-cluster...
+2025-09-27 18:59:20,709 INFO portfolio_rebalancer - Connecting to MongoDB at mongodb://localhost:27017...
+2025-09-27 19:01:38,128 INFO portfolio_rebalancer - Connecting to MongoDB at mongodb+srv://lokiuser:$hrishii!okii25@loki-ai-cluster.b63sh3c.mongodb.net/?retryWrites=true&w=majority&appName=loki-ai-cluster...

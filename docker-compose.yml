@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:6
+    container_name: loki_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+  rebalancer:
+    build: .
+    container_name: loki_rebalancer
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+      - MONGO_DB_NAME=${MONGO_DB_NAME:-loki_agents}
+      - WALLET_ADDRESS=${WALLET_ADDRESS:-}
+      - PRIVATE_KEY=${PRIVATE_KEY:-}
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:

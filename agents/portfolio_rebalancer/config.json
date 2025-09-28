@@ -1,0 +1,32 @@
+{
+  "network": "ethereum",
+  "rpc_url": "https://mainnet.infura.io/v3/YOUR_INFURA_KEY",
+  "wallet_address": "0xYourWalletAddress",
+  "dex": "uniswap_v2",
+  "base_currency": "USD",
+  "targets": {
+    "ETH": 50,
+    "USDC": 30,
+    "WBTC": 20
+  },
+  "thresholds": {
+    "rebalance_threshold_pct": 2.5,
+    "min_trade_usd": 100,
+    "slippage_tolerance_bps": 50,
+    "max_gas_gwei": 40
+  },
+  "simulation": {
+    "default_gas_cost_usd": 5.0
+  },
+  "alerts": {
+    "enabled": true,
+    "channels": ["telegram", "email", "discord"],
+    "telegram_bot_token": "8294596649:AAEPCdhuJoF_hJxEkXtyAsd0WkWyZVYlS38",
+    "telegram_chat_id": "6976498337",
+    "email_smtp": "smtp.gmail.com",
+    "email_user": "laukikxrajput@gmail.com",
+    "email_pass": "bpfi nkdb abnc llxf",
+    "email_to": "shrustixrajput@gmail.com",
+    "discord_webhook_url": "https://discordapp.com/api/webhooks/1421416670978768960/H-FbtR5h7LERpWy_N3Ee4YjnQ3sIqsdcHOCW1OdzHeg65SL_alrJcUpsYHcNklCif2ks"
+  }
+}

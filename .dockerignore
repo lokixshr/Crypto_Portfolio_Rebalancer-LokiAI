@@ -1,0 +1,20 @@
+# Docker build context ignores
+.git
+.gitignore
+.vscode/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+.venv/
+venv/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.DS_Store
+**/node_modules/
+# Byte-compiled/symbolic link backups
+*~
+# PyInstaller
+*.spec
